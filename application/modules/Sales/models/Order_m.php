@@ -33,7 +33,7 @@ class Order_m extends CI_Model
         $object = [
             'idOrderSales' => uniqid(),
             'idCustomer' => $this->input->post('idCustomer'),
-            'noFaktur' => time(),
+            'noInvoice' => time(),
             'tanggalOrder' => date('Y-m-d'),
             'statusPembayaran' => 'Belum Bayar',
             'statusOrder' => '1',
